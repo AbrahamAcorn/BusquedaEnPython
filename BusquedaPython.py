@@ -1,17 +1,15 @@
-'''
-Created on 29 nov 2018
-
-@author: Abraham¬_¬
-'''
-from imaplib import dat
-class Busquedas:
-    def busquedaSecuencial(self,lista,dat):
-        pos=0
-        encontrado=False
-        while pos<len(lista) and not encontrado:
-            if list[pos]==dat:
-            encontrado=True
-            else:
-                 pos=pos+1
-        
+def busquedaSecuencial(unaLista, datoBuscar):
+    pos = 0
+    encontrado = False
     
+    while pos <len(unaLista) and not encontrado:
+        if unaLista[pos] == datoBuscar:
+            encontrado = True
+        else:
+            pos = pos+1
+    return encontrado
+
+
+listaPrueba = [1, 2, 32, 8, 17, 19, 42, 13, 0]
+print(busquedaSecuencial(listaPrueba, 3))
+print(busquedaSecuencial(listaPrueba, 13))
